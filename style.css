@@ -8,13 +8,21 @@ html {
 }
 
 
+form button {
+
+    display: block;
+    padding: 0.3rem;
+    width: 25%;
+    margin: 0 auto;
+}
+
 
 nav {
 
     display: flex;
     justify-content: end;
     gap: 2rem;
-    margin: 1rem 3rem;
+    margin: 2rem 3rem;
 }
 
 nav a {
@@ -396,7 +404,7 @@ nav a:hover {
 
         text-align: center;
         padding: 2rem;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
