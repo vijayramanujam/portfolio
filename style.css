@@ -142,6 +142,11 @@ form {
     border-radius: 8px;
 }
 
+.never {
+
+    text-decoration: 5px solid line-through powderblue;
+}
+
 input,
 textarea {
     margin-bottom: 1rem;
