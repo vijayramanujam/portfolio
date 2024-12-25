@@ -1,0 +1,642 @@
+html {
+
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
+    background-color: #000;
+    color: powderblue;
+}
+
+
+h1 {
+
+    font-size: 1.8rem;
+    ;
+}
+
+
+h2 {
+
+    font-size: 1.5rem;
+}
+
+h3 {
+
+    font-size: 1rem;
+}
+
+table th {
+
+    background-color: #9CA986;
+    color: #333;
+}
+
+tr {
+
+    background-color: #304D30;
+
+}
+
+.project-section h2 {
+
+    margin-bottom: 3rem;
+}
+
+
+.contact-me h2 {
+
+    margin-bottom: 0;
+}
+
+.skills,
+#education {
+
+    text-align: left;
+}
+
+
+nav {
+
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    margin: 1rem 3rem;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav a:hover {
+
+    color: goldenrod;
+}
+
+
+
+
+
+.role {
+
+    visibility: hidden;
+}
+
+@media (max-width:480px) {
+
+    html {
+
+        font-size: 0.8rem;
+    }
+
+    section {
+
+        margin: 1rem;
+        text-align: left;
+    }
+
+    section img {
+
+        width: 15rem;
+        margin: 0 auto;
+        padding: 0.5rem;
+        height: auto;
+        border-radius: 10%;
+
+    }
+
+    section {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .about-heading {
+
+        margin-bottom: 2rem;
+    }
+
+
+
+    .projects {
+
+        margin-top: 0.5rem;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .projects div {
+
+        margin: 0 auto;
+        width: 25rem;
+        height: 250px;
+        margin-bottom: 1.2rem;
+    }
+
+
+    .project-section p {
+
+        padding: 1rem;
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 12px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f4f4f4;
+
+    }
+
+    form {
+
+        text-align: center;
+        padding: 2rem;
+        /* margin-left: 1rem; */
+        width: 26rem;
+        margin: 0 auto;
+    }
+
+    .contact-me h2 span {
+
+        text-decoration: line-through;
+    }
+
+    input,
+    textarea {
+
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+
+
+
+
+    footer {
+
+        text-align: center;
+        padding: 2rem;
+        background-color: #333;
+        color: white;
+
+    }
+
+    footer a {
+
+        margin: 0 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    footer i {
+
+        margin-top: 1rem;
+    }
+
+}
+
+
+
+@media (min-width:481px) and (max-width:768px) {
+
+
+    html {
+
+        font-size: 0.9rem;
+    }
+
+    section {
+
+        margin: 1rem;
+        text-align: left;
+    }
+
+
+
+    section {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+
+    section img {
+
+        width: 15rem;
+        margin: 0 auto;
+        padding: 0.7rem;
+        height: auto;
+        border-radius: 10%;
+
+    }
+
+
+    .about-heading {
+
+        margin-bottom: 2rem;
+    }
+
+    .projects {
+
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+
+    }
+
+    .projects div {
+
+        margin: 0 auto;
+        width: 26rem;
+        height: 200px;
+
+        border: 1px solid black;
+    }
+
+
+    .project-section p {
+
+        padding: 1rem;
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 12px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+
+    form {
+
+        text-align: center;
+        padding: 2rem;
+        width: 26rem;
+        margin: 0 auto;
+    }
+
+    .contact-me h2 span {
+
+        text-decoration: line-through;
+    }
+
+    input,
+    textarea {
+
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+
+
+
+    footer {
+
+        text-align: center;
+        padding: 2rem;
+        background-color: #333;
+        color: white;
+
+    }
+
+    footer a {
+
+        margin: 0 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    footer i {
+
+        margin-top: 1rem;
+    }
+
+
+
+}
+
+
+@media (min-width:769px) and (max-width:1279px) {
+
+
+
+    html {
+
+        font-size: 1rem;
+    }
+
+
+
+    nav {
+
+        display: flex;
+        justify-content: end;
+        gap: 2rem;
+        margin: 2rem 3rem;
+    }
+
+    nav a {
+
+        text-decoration: none;
+    }
+
+    nav a:hover {
+
+        color: goldenrod;
+    }
+
+
+
+    section {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+
+    section img {
+
+        width: 14rem;
+        margin: 0 auto;
+        padding: 0.7rem;
+        height: auto;
+        border-radius: 10%;
+
+    }
+
+
+
+    .about-heading {
+
+        margin-bottom: 2rem;
+    }
+
+    .projects {
+
+        margin-top: 0.5rem;
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+        gap: 1rem;
+        flex: 1;
+
+
+    }
+
+    .projects div {
+
+        margin: 0 auto;
+
+        width: 23rem;
+        height: 300px;
+
+        border: 1px solid black;
+    }
+
+
+    .project-section p {
+
+        padding: 1rem;
+    }
+
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 12px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+
+
+
+    form {
+
+        text-align: center;
+        padding: 2rem;
+        /* margin-left: 1rem; */
+        width: 40rem;
+        margin: 0 auto;
+    }
+
+    .contact-me h2 span {
+
+        text-decoration: line-through;
+    }
+
+    input,
+    textarea {
+
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+
+
+
+
+    footer {
+
+        text-align: center;
+        padding: 2rem;
+        background-color: #333;
+        color: white;
+
+    }
+
+    footer a {
+
+        margin: 0 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    footer i {
+
+        margin-top: 1rem;
+    }
+
+
+
+}
+
+
+@media (min-width:1280px) {
+
+    html {
+
+        font-size: 1.1rem;
+    }
+
+    nav {
+
+        display: flex;
+        justify-content: end;
+        gap: 2rem;
+        margin: 1.5rem 3rem;
+    }
+
+    nav a {
+
+        text-decoration: none;
+    }
+
+    nav a:hover {
+
+        color: goldenrod;
+    }
+
+
+    section {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+
+    section img {
+
+        width: 14rem;
+        margin: 0 auto;
+        padding: 0.7rem;
+        height: auto;
+        border-radius: 10%;
+
+    }
+
+
+    .about-heading {
+
+        margin-bottom: 2rem;
+    }
+
+    .projects {
+
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+
+
+    }
+
+    .projects div {
+
+        margin: 0 auto;
+
+        width: 25rem;
+        height: 300px;
+
+        border: 1px solid black;
+    }
+
+
+    .project-section p {
+
+        padding: 1rem;
+    }
+
+
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 12px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+
+
+    form {
+
+        text-align: center;
+        padding: 2rem;
+        /* margin-left: 1rem; */
+        width: 40rem;
+        margin: 0 auto;
+    }
+
+    .contact-me h2 span {
+
+        text-decoration: line-through;
+    }
+
+    input,
+    textarea {
+
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+
+
+
+
+    footer {
+
+        text-align: center;
+        padding: 2rem;
+        background-color: #333;
+        color: white;
+
+    }
+
+    footer a {
+
+        margin: 0 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    footer i {
+
+        margin-top: 1rem;
+    }
+
+
+
+
+
+}
