@@ -43,7 +43,12 @@ button:hover {
 
 }
 
-nav {
+.blurred-image {
+
+    margin-top: 10rem;
+}
+
+/* nav {
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
@@ -52,7 +57,7 @@ nav {
 
 nav a:hover {
     color: #fabd2f;
-}
+} */
 
 section {
     text-align: center;
