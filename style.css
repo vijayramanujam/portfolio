@@ -48,16 +48,9 @@ button:hover {
     margin-top: 10rem;
 }
 
-/* nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
-    margin: 1rem 2rem;
+.skill-cloud {
+    width: 30%;
 }
-
-nav a:hover {
-    color: #fabd2f;
-} */
 
 section {
     text-align: center;
@@ -200,6 +193,10 @@ footer i {
         font-size: 0.8rem;
     }
 
+    .skill-cloud {
+        width: 100%;
+    }
+
     section img {
         width: 8rem;
         margin: 0 auto;
@@ -235,6 +232,12 @@ footer i {
         font-size: 0.9rem;
     }
 
+
+    .skill-cloud {
+
+        width: 90%;
+    }
+
     section img {
         width: 9rem;
         margin: 0 auto;
@@ -255,6 +258,11 @@ footer i {
 @media (min-width: 769px) and (max-width: 1279px) {
     html {
         font-size: 1rem;
+    }
+
+    .skill-cloud {
+
+        width: 50%;
     }
 
     section img {
