@@ -1,599 +1,281 @@
 html {
-
     font-size: 16px;
     line-height: 1.3;
     font-family: "Montserrat", serif;
     box-sizing: border-box;
+    background-color: #282828;
+
+    color: #ebdbb2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+    color: #ebdbb2;
+}
+
+a {
+    text-decoration: none;
+    color: #83a598;
 
 }
 
+a:hover {
+    color: #fabd2f;
+}
 
-form button {
-
-    display: block;
+button {
     padding: 0.3rem;
     width: 40%;
     margin: 0 auto;
+    display: block;
+    background-color: #83a598;
+
+    color: #282828;
+
+    border: none;
+    border-radius: 5px;
 }
 
+button:hover {
+    background-color: #8ec07c;
 
-
+}
 
 nav {
-
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 2rem;
     margin: 2rem 3rem;
 }
 
-nav a {
+nav a:hover {
+    color: #fabd2f;
+}
 
+section {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+section img {
+    width: 14rem;
+    margin: 0 auto;
+    padding: 0.7rem;
+    height: auto;
+    border-radius: 100%;
+    border: 2px solid #83a598;
+
+}
+
+.about-heading {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.projects {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.projects div {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1.2rem;
+    border: 1px solid #b8bb26;
+
+    background-color: #3c3836;
+
+    border-radius: 5px;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.projects div:hover {
+    background-color: #504945;
+
+    border-color: #fe8019;
+
+}
+
+.project-section p {
+    padding: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #3c3836;
+
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #b8bb26;
+
+}
+
+th {
+    background-color: #504945;
+
+    color: #ebdbb2;
+
+}
+
+tr:nth-child(even) {
+    background-color: #282828;
+}
+
+form {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #3c3836;
+
+    border-radius: 8px;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #b8bb26;
+
+    background-color: #282828;
+    color: #ebdbb2;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #fabd2f;
+
+    outline: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #282828;
+
+    color: #ebdbb2;
+}
+
+footer a {
+    margin: 0 15px;
+    color: #83a598;
+    /* Blue */
     text-decoration: none;
 }
 
-nav a:hover {
-
-    color: goldenrod;
+footer a:hover {
+    color: #fabd2f;
 }
 
-
-
-
-
-.role {
-
-    visibility: hidden;
+footer i {
+    margin-top: 1rem;
 }
 
-@media (max-width:480px) {
-
+@media (max-width: 480px) {
     html {
-
         font-size: 0.8rem;
     }
 
-    section {
-
-        margin: 1rem;
-        text-align: left;
-    }
-
     section img {
-
         width: 15rem;
         margin: 0 auto;
         padding: 0.5rem;
         height: auto;
-        border-radius: 10%;
-
-    }
-
-    section {
-        text-align: center;
-        padding: 1.5rem;
-    }
-
-    .about-heading {
-
-        margin-bottom: 2rem;
-    }
-
-
-
-    .projects {
-
-        margin: 0.5rem 2rem;
-
-
-        display: flex;
-        flex-direction: column;
-
+        border-radius: 100%;
+        border: 2px solid #83a598;
+        /* Blue border */
     }
 
     .projects div {
-
-        margin: 0 auto;
         width: 100%;
         height: 200px;
-        margin-bottom: 1.2rem;
-    }
-
-
-    .project-section p {
-
-        padding: 1rem;
-    }
-
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-    }
-
-    th,
-    td {
-        text-align: left;
-        padding: 12px;
-        border: 1px solid #ddd;
-    }
-
-    th {
-        background-color: #f4f4f4;
-
-    }
-
-    form {
-
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .contact-me h2 span {
-
-        text-decoration: line-through;
     }
 
     input,
     textarea {
-
-        margin-bottom: 1rem;
         width: 90%;
     }
-
-
-
-
-    footer {
-
-        text-align: center;
-        padding: 2rem;
-        background-color: #333;
-        color: white;
-
-    }
-
-    footer a {
-
-        margin: 0 15px;
-        color: white;
-        text-decoration: none;
-    }
-
-    footer i {
-
-        margin-top: 1rem;
-    }
-
 }
 
-
-
-@media (min-width:481px) and (max-width:768px) {
-
-
+@media (min-width: 481px) and (max-width: 768px) {
     html {
-
         font-size: 0.9rem;
     }
 
-    section {
-
-        margin: 1rem;
-        text-align: left;
-    }
-
-
-
-    section {
-        text-align: center;
-        padding: 1.5rem;
-    }
-
-
     section img {
-
         width: 15rem;
         margin: 0 auto;
         padding: 0.7rem;
-        height: auto;
-        border-radius: 10%;
-
-    }
-
-
-    .about-heading {
-
-        margin-bottom: 2rem;
-    }
-
-    .projects {
-
-        margin-top: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-
     }
 
     .projects div {
-
-        margin: 0 auto;
         width: 26rem;
         height: 200px;
-
-        border: 1px solid black;
-    }
-
-
-    .project-section p {
-
-        padding: 1rem;
-    }
-
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-    }
-
-    th,
-    td {
-        text-align: left;
-        padding: 12px;
-        border: 1px solid #ddd;
-    }
-
-    th {
-        background-color: #f4f4f4;
-    }
-
-    form {
-
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .contact-me h2 span {
-
-        text-decoration: line-through;
     }
 
     input,
     textarea {
-
-        margin-bottom: 1rem;
         width: 90%;
     }
-
-
-
-    footer {
-
-        text-align: center;
-        padding: 2rem;
-        background-color: #333;
-        color: white;
-
-    }
-
-    footer a {
-
-        margin: 0 15px;
-        color: white;
-        text-decoration: none;
-    }
-
-    footer i {
-
-        margin-top: 1rem;
-    }
-
-
-
 }
 
-
-@media (min-width:769px) and (max-width:1279px) {
-
-
-
+@media (min-width: 769px) and (max-width: 1279px) {
     html {
-
         font-size: 1rem;
     }
 
-
-
-    nav {
-
-        display: flex;
-        justify-content: end;
-        gap: 2rem;
-        margin: 2rem 3rem;
-    }
-
-    nav a {
-
-        text-decoration: none;
-    }
-
-    nav a:hover {
-
-        color: goldenrod;
-    }
-
-
-
-    section {
-        text-align: center;
-        padding: 1.5rem;
-    }
-
-
     section img {
-
         width: 14rem;
-        margin: 0 auto;
-        padding: 0.7rem;
-        height: auto;
-        border-radius: 10%;
-
-    }
-
-
-
-    .about-heading {
-
-        margin-bottom: 2rem;
     }
 
     .projects {
-
-        margin-top: 0.5rem;
-        display: flex;
-        /* flex-wrap: wrap; */
         flex-direction: row;
-        gap: 1rem;
-        flex: 1;
-
-
+        justify-content: space-between;
     }
 
     .projects div {
-
-        margin: 0 auto;
-
         width: 23rem;
         height: 300px;
-
-        border: 1px solid black;
-    }
-
-
-    .project-section p {
-
-        padding: 1rem;
-    }
-
-
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-    }
-
-    th,
-    td {
-        text-align: left;
-        padding: 12px;
-        border: 1px solid #ddd;
-    }
-
-    th {
-        background-color: #f4f4f4;
-    }
-
-
-    form {
-
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .contact-me h2 span {
-
-        text-decoration: line-through;
     }
 
     input,
     textarea {
-
-        margin-bottom: 1rem;
         width: 100%;
     }
-
-
-
-
-    footer {
-
-        text-align: center;
-        padding: 2rem;
-        background-color: #333;
-        color: white;
-
-    }
-
-    footer a {
-
-        margin: 0 15px;
-        color: white;
-        text-decoration: none;
-    }
-
-    footer i {
-
-        margin-top: 1rem;
-    }
-
-
-
 }
 
-
-@media (min-width:1280px) {
-
+@media (min-width: 1280px) {
     html {
-
         font-size: 1.1rem;
     }
 
-    nav {
-
-        display: flex;
-        justify-content: end;
-        gap: 2rem;
-        margin: 1.5rem 3rem;
-    }
-
-    nav a {
-
-        text-decoration: none;
-    }
-
-    nav a:hover {
-
-        color: goldenrod;
-    }
-
-
-    section {
-        text-align: center;
-        padding: 1.5rem;
-    }
-
-
-    section img {
-
-        width: 14rem;
-        margin: 0 auto;
-        padding: 0.7rem;
-        height: auto;
-        border-radius: 10%;
-
-    }
-
-
-    .about-heading {
-
-        margin-bottom: 2rem;
-    }
-
     .projects {
-
-        margin-top: 0.5rem;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-
-
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
 
     .projects div {
-
-        margin: 0 auto;
-
         width: 25rem;
         height: 300px;
-
-        border: 1px solid black;
-    }
-
-
-    .project-section p {
-
-        padding: 1rem;
-    }
-
-
-
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-    }
-
-    th,
-    td {
-        text-align: left;
-        padding: 12px;
-        border: 1px solid #ddd;
-    }
-
-    th {
-        background-color: #f4f4f4;
-    }
-
-
-    form {
-
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-
-    .contact-me h2 span {
-
-        text-decoration: line-through;
     }
 
     input,
     textarea {
-
-        margin-bottom: 1rem;
         width: 90%;
     }
-
-
-
-
-    footer {
-
-        text-align: center;
-        padding: 2rem;
-        background-color: #333;
-        color: white;
-
-    }
-
-    footer a {
-
-        margin: 0 15px;
-        color: white;
-        text-decoration: none;
-    }
-
-    footer i {
-
-        margin-top: 1rem;
-    }
-
-
-
-
-
 }
