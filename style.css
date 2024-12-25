@@ -79,7 +79,7 @@ section img {
     display: flex;
     gap: 1rem;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .projects div {
@@ -97,7 +97,6 @@ section img {
 
 .projects div:hover {
     background-color: #504945;
-
     border-color: #fe8019;
 
 }
@@ -198,7 +197,16 @@ footer i {
         height: auto;
         border-radius: 100%;
         border: 2px solid #83a598;
-        /* Blue border */
+
+    }
+
+    .projects {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 
     .projects div {
@@ -246,11 +254,12 @@ footer i {
     .projects {
         flex-direction: row;
         justify-content: space-between;
+        /* align-items: center; */
     }
 
     .projects div {
         width: 23rem;
-        height: 300px;
+        height: 200px;
     }
 
     input,
@@ -265,7 +274,7 @@ footer i {
     }
 
     .projects {
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: nowrap;
     }
 
